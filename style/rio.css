@@ -92,27 +92,6 @@ textarea{
 .current{
     opacity: .5;
 }
-.bubble{
-    -webkit-transition-duration:all 0.8s ease-in-out;
-    -moz-transition-duration:all 0.8s ease-in-out;
-    -o-transition-duration:all 0.8s ease-in-out;
-    transition-duration:all 0.8s ease-in-out;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
-}
-.bubble:hover{
-    transform-origin: top left;
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
-    transform: rotate(90deg);
-   
-}  
 #flow{
     background-color:#bc923a;
     border:1px solid white;

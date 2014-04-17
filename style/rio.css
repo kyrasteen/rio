@@ -1,0 +1,224 @@
+html{
+    background-image: url(/Users/Kyra/Documents/coding/rio/images/back.png);
+    font-size: 62.5%;
+}
+li{
+    font-size:2.3em;
+    display:inline;
+    margin:10px;
+}
+header{
+    background-image: url(/Users/Kyra/Documents/coding/rio/images/nav.png);
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 10px #ffffff;
+}
+#logo{
+    margin-top: 10px;
+    display: inline;
+}
+ul{
+    float:right;
+    display: inline;
+}
+nav{
+    padding-top:50px;
+}
+a{
+  font-family:Diner-Obese; 
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 3px;
+    color:white;
+    /*text-shadow:-1px -1px 0 #c4b896,
+              1px -1px 0 #c4b896,
+                -1px 1px 0 #c4b896,
+                1px 1px 0 #c4b896;*/
+}
+a:hover{
+    color:#bc923a;
+}
+#nav-collapse{
+    display:none;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-toggle{
+    display:none;
+}
+legend{
+    color:#625c4b;
+    font-family: diner-obese;
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding:0px 30px 0 30px;
+}
+fieldset{
+    padding:30px;
+    box-shadow: 0 0 10px #ffffff;
+    margin-top: 30px;
+}
+input{
+    display: block;
+    margin:auto;
+    margin-top: 5px;
+    text-decoration: none;
+    outline: none;
+    padding:10px;
+    font-family: desyrel;
+}
+textarea{
+    display: block;
+    margin: auto;
+    padding:20px;
+    margin-top: 15px;
+    font-family: desyrel;
+    border: none;
+    box-shadow: 0 0 10px #ffffff;
+    outline:none;
+}
+#button{
+    font-family:Diner-Obese;
+    font-size: 2.3em;
+    color:#bc923a;
+    margin-top:20px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    background: url(/Users/Kyra/Documents/coding/rio/images/nav.png);
+    letter-spacing: 2px;
+    
+}
+.current{
+    opacity: .5;
+}
+.bubble{
+    -webkit-transition-duration:all 0.8s ease-in-out;
+    -moz-transition-duration:all 0.8s ease-in-out;
+    -o-transition-duration:all 0.8s ease-in-out;
+    transition-duration:all 0.8s ease-in-out;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+}
+.bubble:hover{
+    transform-origin: top left;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform: rotate(90deg);
+   
+}  
+#flow{
+    background-color:#bc923a;
+    border:1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding:40px;
+    width:30px;
+}
+#dark{
+    color:#625c4b;
+}
+#client1, #client2, #client3{
+    position: absolute;
+}
+#client1Text, #client2Text, #client3Text{
+    position:fixed;
+    text-align:center;
+    font-family: diner-obese;
+    color:transparent;
+    border:3px solid transparent;
+    line-height: 4em;
+    letter-spacing: 3px;
+    font-size: 4em;
+}
+#client1Text:hover, #client2Text:hover, #client3Text:hover{
+    background-color: rgba(255, 255, 255, .6);
+    color:#625c4b;
+    border:3px solid white;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#shaw, #dixon, #robson{
+    margin-top: 10em;
+    display: inline-block;
+    position:relative;
+    vertical-align: baseline;
+}
+.modalDialog {
+	position: fixed;
+	font-family: desyrel, Helvetica, sans-serif;
+    color:#625c4b;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+    width:300px;
+	position:relative;
+	margin:10% auto;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+	background-image: url(/Users/Kyra/Documents/coding/rio/images/nav.png);
+}
+.modalDialog > div h1{
+    font-family: diner-obese;
+    letter-spacing: 3px;
+    color:#bc923a;
+}
+.close {
+	background: #bc923a;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-size:1.3em;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.close:hover { background: #625c4b; }
+
+@media screen and (max-width:770px){
+    a{
+        font-size: .7em;
+    }
+}
+@media screen and (max-width:500px){
+    .nav-toggle{
+        display: block;
+        font-size:2em;
+        padding:.5em;
+        float:right;
+    }
+    #nav-collapse{
+        display: block;
+    }
+    #regular{
+        display: none;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" background='images/back.gif'>
+        <head>
+           <meta name="description" content="Rio Renovation, home improvement">
+            <meta name="keywords" content="Rio Renovation home improvement west linn">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <meta charset="utf-8">
+            <title>Rio Renovation</title>
+            <link rel="stylesheet" type="text/css" href="style/desyrel.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/rio.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/diner-obese.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/skeleton.css" media="screen">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+            <!--responsive nav=================-->
+
+            <link rel="stylesheet" href="/Users/Kyra/Documents/coding/rio/style/responsive-nav.css">
+            <script src="/Users/Kyra/Documents/coding/rio/js/responsive-nav.js"></script>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                //dropdown//
+                $("<select />").appendTo(".nav-collapse ul");
+            });
+
+            </script>
+        </head>
+    <header class="container">
+        <img id="logo" src="images/rio-logo.png" width="270px" height="auto" class="six columns">
+        <nav id="regular" class="ten columns">
+            <ul>
+                <li><a href="process.html">process</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="clients.html">clients</a></li>
+                <li><a href="john.html">john</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        
+    <!--collapse responsive nav -->
+        
+         <nav id="nav-collapse">
+             <ul>
+                <li><a href="process.html">process</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="clients.html">clients</a></li>
+                <li><a href="john.html">john</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body class="container">
+        <div id="shaw" class="one-third column">
+                <img src="images/shaw.png" id="client1" class="one-third column">
+                <a href="#openModal" id="client1Text" class="one-third column">Shaw</a>
+        </div>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="close" class="close"> X</a>
+                <h1>Shaw family</h1>
+                <blockquote>
+                    <p>Kitchen Renovation</p>
+                    <q>asdfkjadsfljd.</q>
+                </blockquote>
+            </div>
+        </div>
+        
+        <div id="dixon" class="one-third column">
+                <img src="images/miller.png" id="client2" class="one-third column">
+                <a href="#openModal2" id="client2Text" class="one-third column">Dixon</a>
+        </div>
+        <div id="openModal2" class="modalDialog">
+            <div>
+                <a href="#close" title="close" class="close"> X</a>
+                <h1>Dixon family</h1>
+                <blockquote>
+                    <p>Kitchen Renovation</p>
+                    <q>asdfkjadsfljd.</q>
+                </blockquote>
+            </div>
+        </div>
+        
+        <div id="robson" class="one-third column">
+                <img src="images/robson.png" id="client3" class="one-third column">
+                <a href="#openModal3" id="client3Text" class="one-third column">Robson</a>
+            </div>
+        <div id="openModal3" class="modalDialog">
+            <div>
+                <a href="#close" title="close" class="close"> X</a>
+                <h1>Robson family</h1>
+                <blockquote>
+                    <p>Kitchen Renovation</p>
+                    <q>asdfkjadsfljd.</q>
+                </blockquote>
+            </div>
+        </div>
+       
+            
+        
+        
+    <!--responsive nav-->
+        
+    <script>
+        var nav = responsiveNav("#nav-collapse");
+    </script>
+        
+    <!--end js-->
+        
+    </body>
+    <footer></footer>
+</html>
+    
+    
+    
